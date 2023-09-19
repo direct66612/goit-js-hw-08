@@ -12,13 +12,6 @@ const markup = galleryItems
   )
   .join('');
 list.insertAdjacentHTML('beforeend', markup);
-list.addEventListener('click', handleClick);
-function handleClick(event) {
-  event.preventDefault();
-  if (event.target === event.currentTarget) {
-    return;
-  }
-}
 const instance = new SimpleLightbox('.gallery__link', {
   captionsData: 'alt',
   captionDelay: 250,
