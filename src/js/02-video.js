@@ -14,4 +14,4 @@ const onTimeUpdate = e => {
   localStorage.setItem('videoplayer-current-time', JSON.stringify(e.seconds));
 };
 
-// player.on('timeupdate', throttle(onTimeUpdate, 1000));
+player.on('timeupdate', throttle(onTimeUpdate, 1000));
