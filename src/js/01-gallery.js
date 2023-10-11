@@ -3,7 +3,7 @@ import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 // Change code below this line
-const list = document.querySelector('.gallery');
+const list = document.querySelector('gallery');
 const markup = galleryItems
   .map(
     ({ preview, original, description }) =>
@@ -17,3 +17,4 @@ const instance = new SimpleLightbox('.gallery__link', {
   captionDelay: 250,
 });
 instance.on('show.simpleLightbox');
+console.log('!!!!');
